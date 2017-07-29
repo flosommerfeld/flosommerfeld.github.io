@@ -202,6 +202,28 @@
     </div>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>
+    if ($(window).width() < 440) {
+      $("h1").css("font-size", "24px");
+      $("h3").css("font-size", "15px");
+      $("p").css("font-size", "13px");
+    }
+
+    $(window).resize(function() {
+      if ($(window).width() < 440) {
+        $("h1").css("font-size", "24px");
+        $("h3").css("font-size", "15px");
+        $("p").css("font-size", "13px");
+      } else {
+        $("h1").css("font-size", "35px");
+        $("h3").css("font-size", "17px");
+        $("p").css("font-size", "16px");
+      }
+
+    });
+  </script>
+
 </body>
 
 </html>
