@@ -363,7 +363,7 @@
           </div>
         </a>
         <a href="#" class="button">
-          <div class="side-button  active">
+          <div class="side-button active">
             <i class="material-icons">group_add</i>
             <div style="padding-left: 10px;">My social media</div>
           </div>
@@ -384,6 +384,21 @@
     </div>
   </div>
 
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>
+  if ($(window).width() < 440) {
+    $("h1").css("font-size", "24px");
+  }
+
+  $(window).resize(function() {
+    if ($(window).width() < 440) {
+      $("h1").css("font-size", "24px");
+    } else {
+      $("h1").css("font-size", "35px");
+    }
+
+  });
+</script>
 </body>
 
 </html>
