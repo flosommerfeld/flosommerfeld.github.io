@@ -5,7 +5,7 @@
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
   <link rel="icon" href="img/favicon.png" type="image/png" sizes="256x256">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
   <title>Social media - flosommerfeld</title>
   <style>
     @media (max-width: 1150px) {
@@ -46,7 +46,7 @@
       margin: 0;
       font-family: 'Roboto', sans-serif;
       color: rgb(92, 92, 92);
-      background-color: #f9f9f9;
+      background-color: rgb(42, 43, 48);
       font-size: 13px;
       line-height: 20px;
     }
@@ -61,6 +61,7 @@
       overflow: hidden;
       flex: 0 0 14.25vw;
       order: -1;
+      background-color: rgb(28, 29, 34);
     }
 
     .nav-wrapper {
@@ -68,7 +69,7 @@
       position: fixed;
       height: 100%;
       width: 14.25vw;
-      background-color: #424f5a;
+      background-color: rgb(28, 29, 34);
     }
 
     .container {
@@ -97,7 +98,7 @@
     }
 
     i {
-      color: white;
+      color: rgb(189, 189, 189);
     }
 
     .page a,
@@ -114,8 +115,9 @@
     .nav-wrapper a {
       outline: none;
       text-decoration: none !important;
-      font-size: 15px;
-      cursor: default;
+      font-size: 19px;
+      font-weight: 100;
+      cursor: pointer;
     }
 
     .side-button {
@@ -125,7 +127,7 @@
       align-items: center;
       padding-left: 5%;
       color: #c1c1c1;
-      border-left: solid 4px #424f5a;
+      border-left: solid 4px rgb(28, 29, 34);
     }
 
     .side-button div {
@@ -133,30 +135,31 @@
     }
 
     .side-button:hover {
-      background-color: #5e6972;
-      border-left: solid 4px #5e6972;
+      background-color: rgb(39, 39, 45);
+      border-left: solid 4px rgb(39, 39, 45);
     }
 
     .active {
-      border-left: solid 4px #ff9500;
-      background-color: #343f48;
-      color: white;
+      border-left: solid 4px rgb(92, 94, 220);
+      color: rgb(189, 189, 189);
+      background-color: rgb(23, 23, 28);
     }
 
     .active:hover {
-      background-color: #1a2533;
-      border-left: solid 4px #ff9500;
+      background-color: rgb(18, 18, 22);
+      border-left: solid 4px rgb(92, 94, 220);
     }
 
     h1 {
       font-size: 35px;
       font-weight: 400;
       margin-top: 0;
-      color: #333333;
+      color: rgb(206, 206, 206);
     }
 
     hr {
-      border-top: 1px solid rgba(200, 200, 200, 0.01);
+      border-top: 1px solid rgb(92, 94, 220);
+      border-bottom: 1px solid rgb(92, 94, 220);
       border-left: 0px;
       border-right: 0px;
       width: 100%;
@@ -172,7 +175,7 @@
       margin-bottom: 15px;
       padding-left: 30px;
       cursor: default;
-      color: #424e5a;
+      color: rgb(189, 189, 189);
       margin-left: 4px;
     }
 
@@ -353,19 +356,19 @@
         <a href="index.html" class="button">
           <div class="side-button">
             <i class="material-icons">code</i>
-            <div style="padding-left: 10px;">View my projects</div>
+            <div style="padding-left: 20px;">Projects</div>
           </div>
         </a>
         <a href="about.html" class="button">
           <div class="side-button">
             <i class="material-icons">info_outline</i>
-            <div style="padding-left: 10px;">Read about me</div>
+            <div style="padding-left: 20px;">About me</div>
           </div>
         </a>
         <a href="#" class="button">
           <div class="side-button active">
             <i class="material-icons">group_add</i>
-            <div style="padding-left: 10px;">My social media</div>
+            <div style="padding-left: 20px;">Social media</div>
           </div>
         </a>
       </div>
