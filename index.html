@@ -6,7 +6,7 @@
   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
   <link rel="icon" href="img/favicon.png" type="image/png" sizes="256x256">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
   <title>Projects - flosommerfeld</title>
   <style>
     @media (max-width: 1226px) {
@@ -47,7 +47,7 @@
       margin: 0;
       font-family: 'Roboto', sans-serif;
       color: rgb(92, 92, 92);
-      background-color: #f9f9f9;
+      background-color: rgb(42, 43, 48);
       font-size: 13px;
       line-height: 20px;
     }
@@ -65,7 +65,7 @@
       overflow: hidden;
       flex: 0 0 14.25vw;
       order: -1;
-      background-color: #424f5a;
+      background-color: rgb(28, 29, 34);
     }
 
     .nav-wrapper {
@@ -73,11 +73,11 @@
       position: fixed;
       height: 100%;
       width: 14.25vw;
-      background-color: #424f5a;
+      background-color: rgb(28, 29, 34);
     }
 
     i {
-      color: white;
+      color: rgb(189, 189, 189);
     }
 
     #items {
@@ -107,54 +107,47 @@
 
     div.page {
       overflow: hidden;
-      background-color: #eeeeee;
+      background-color: rgb(71, 72, 76);
       margin: 9px;
-      border: 1px solid #ccc;
       width: 500px;
-
       height: 320px;
-
-      border-radius: 10px;
       margin-bottom: 22px;
-      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+      box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.03);
+      border-radius: 3px;
     }
 
-    div.page:hover {
-      box-shadow: 0px 0px 1px 1px rgb(2, 117, 216);
-      background-color: #5c5c5c;
-      border: 1px solid rgb(2, 117, 216);
-    }
+    div.page:hover {}
 
-    div.page:hover .desc {
-      color: white;
-    }
 
 
     div.page img {
       object-position: 0 0;
-      z-index: -1000;
+      z-index: 500;
       object-fit: cover;
       width: 500px;
-
       max-width: 500px;
       height: 285px;
-
       max-height: 285px;
-      border-radius: 10px 10px 0px 0px;
+      border-radius: 3px 3px 0px 0px;
+    }
+
+    div.page:hover img {
+      filter: grayscale(100%);
+      filter: opacity(30%);
     }
 
     div.desc {
       height: 30px;
-
       max-height: 30px;
       width: 500px;
-
       max-width: 500px;
       text-align: center;
       padding-left: 5px;
       padding-right: 5px;
-      padding-top: 7px;
+      padding-top: 1px;
       font-size: 1.3em;
+      color: #d8d8d8;
+      z-index: 1000;
     }
 
     .overlay {
@@ -186,8 +179,9 @@
     .nav-wrapper a {
       outline: none;
       text-decoration: none !important;
-      font-size: 15px;
-      cursor: default;
+      font-size: 19px;
+      font-weight: 100;
+      cursor: pointer;
     }
 
     .side-button {
@@ -196,8 +190,8 @@
       display: flex;
       align-items: center;
       padding-left: 5%;
-      color: #c1c1c1;
-      border-left: solid 4px #424f5a;
+      color: rgb(189, 189, 189);
+      border-left: solid 4px rgb(28, 29, 34);
     }
 
     .side-button div {
@@ -205,19 +199,19 @@
     }
 
     .side-button:hover {
-      background-color: #5e6972;
-      border-left: solid 4px #5e6972;
+      background-color: rgb(39, 39, 45);
+      border-left: solid 4px rgb(39, 39, 45);
     }
 
     .active {
-      border-left: solid 4px #ff9500;
-      background-color: #343f48;
-      color: white;
+      border-left: solid 4px rgb(92, 94, 220);
+      color: rgb(189, 189, 189);
+      background-color: rgb(23, 23, 28);
     }
 
     .active:hover {
-      background-color: #1a2533;
-      border-left: solid 4px #ff9500;
+      background-color: rgb(18, 18, 22);
+      border-left: solid 4px rgb(92, 94, 220);
     }
 
     #loader {
@@ -279,11 +273,34 @@
 
 
     .tbf {
-      opacity: 0.2;
+      opacity: 0.4;
     }
 
     .tbf:hover {
       opacity: 0.8;
+    }
+
+    input {
+      width: 350px;
+      height: 43px;
+      padding: 0px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ececec;
+      border-radius: 2px;
+      box-sizing: border-box;
+      margin-top: 0.7em;
+      font-size: 1em;
+    }
+
+    input[type=button] {
+      border: 3px solid black;
+      color: white;
+      font-size: 1em;
+      border: 0;
+      margin-top: 1.1em;
+      width: 350px;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -298,19 +315,19 @@
         <a href="#" class="button">
           <div class="side-button active">
             <i class="material-icons">code</i>
-            <div style="padding-left: 10px;">View my projects</div>
+            <div style="padding-left: 20px;">Projects</div>
           </div>
         </a>
         <a href="about.html" class="button">
           <div class="side-button">
             <i class="material-icons">info_outline</i>
-            <div style="padding-left: 10px;">Read about me</div>
+            <div style="padding-left: 20px;">About me</div>
           </div>
         </a>
         <a href="socialmedia.html" class="button">
           <div class="side-button">
             <i class="material-icons">group_add</i>
-            <div style="padding-left: 10px;">My social media</div>
+            <div style="padding-left: 20px;">Social media</div>
           </div>
         </a>
       </div>
@@ -337,65 +354,53 @@
       </div>
       <div class="page">
         <a href="#">
-         <img class="tbf" src="img/tux.jpg" >
-         <div class="desc">To be following</div>
+         <img class="tbf" src="img/noImage.png" >
+         <div class="desc">New projects coming soon</div>
        </a>
       </div>
       <div class="page">
         <a href="#">
-         <img class="tbf"   src="img/tux.jpg" >
-         <div class="desc">To be following</div>
+         <img class="tbf" src="img/noImage.png" >
+         <div class="desc">New projects coming soon</div>
        </a>
       </div>
       <div class="page">
         <a href="#">
-         <img class="tbf"   src="img/tux.jpg" >
-         <div class="desc">To be following</div>
+         <img class="tbf" src="img/noImage.png" >
+         <div class="desc">New projects coming soon</div>
        </a>
       </div>
       <div class="page">
         <a href="#">
-         <img class="tbf"   src="img/tux.jpg" >
-         <div class="desc">To be following</div>
+         <img class="tbf" src="img/noImage.png" >
+         <div class="desc">New projects coming soon</div>
        </a>
       </div>
       <div class="page">
         <a href="#">
-         <img  class="tbf"  src="img/tux.jpg" >
-         <div class="desc">To be following</div>
+         <img class="tbf" src="img/noImage.png" >
+         <div class="desc">New projects coming soon</div>
        </a>
       </div>
       <div class="page">
         <a href="#">
-         <img class="tbf"  src="img/tux.jpg" >
-         <div class="desc">To be following</div>
+         <img class="tbf" src="img/noImage.png" >
+         <div class="desc">New projects coming soon</div>
        </a>
       </div>
 
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script>
-  if ($(window).width() < 300) {
-    $(".page").width(200);
-    $("img").width(200);
-    $(".desc").width(200);
-    $(".page").height(150);
-    $("img").height(120);
-    $(".desc").height(10);
-    $(".desc").css("font-size", "12px");
-    $(".desc").css("padding-top", "0px");
-  } else if ($(window).width() < 630) {
-    $(".page").width(230);
-    $("img").width(230);
-    $(".desc").width(230);
-    $(".page").height(180);
-    $("img").height(150);
-    $(".desc").height(30);
-    $(".desc").css("font-size", "12px");
-    $(".desc").css("padding-top", "0px");
-  }
-  $(window).resize(function() {
+  <script>
+    $(".page").mouseover(function() {
+      $("#x").css("display", "inline");
+    });
+    $(".page").mouseout(function() {
+      $("#x").css("display", "none");
+    });
+
+
     if ($(window).width() < 300) {
       $(".page").width(200);
       $("img").width(200);
@@ -414,19 +419,39 @@
       $(".desc").height(30);
       $(".desc").css("font-size", "12px");
       $(".desc").css("padding-top", "0px");
-    } else {
-      $(".page").width(495);
-      $("img").width(500);
-      $(".desc").width(500);
-      $(".page").height(318);
-      $("img").height(283);
-      $(".desc").height(23);
-      $(".desc").css("font-size", "1.3em");
-      $(".desc").css("padding-top", "7px");
     }
+    $(window).resize(function() {
+      if ($(window).width() < 300) {
+        $(".page").width(200);
+        $("img").width(200);
+        $(".desc").width(200);
+        $(".page").height(150);
+        $("img").height(120);
+        $(".desc").height(10);
+        $(".desc").css("font-size", "12px");
+        $(".desc").css("padding-top", "0px");
+      } else if ($(window).width() < 630) {
+        $(".page").width(230);
+        $("img").width(230);
+        $(".desc").width(230);
+        $(".page").height(180);
+        $("img").height(150);
+        $(".desc").height(30);
+        $(".desc").css("font-size", "12px");
+        $(".desc").css("padding-top", "0px");
+      } else {
+        $(".page").width(495);
+        $("img").width(500);
+        $(".desc").width(500);
+        $(".page").height(318);
+        $("img").height(283);
+        $(".desc").height(23);
+        $(".desc").css("font-size", "1.3em");
+        $(".desc").css("padding-top", "7px");
+      }
 
-  });
-</script>
+    });
+  </script>
 </body>
 
 </html>
