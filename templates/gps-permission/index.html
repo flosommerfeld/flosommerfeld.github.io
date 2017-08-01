@@ -1,0 +1,125 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+  <style>
+    @media (min-width: 769px) {
+      .flexcontainer {
+        max-width: 20%;
+      }
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      height: 100%;
+      margin: 0 auto;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .flexcontainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .button {
+      padding: 15px 20px;
+      margin: 0;
+      display: inline-block;
+      text-align: center;
+      border: 1px solid #ececec;
+      border-radius: 50px;
+      box-sizing: border-box;
+      background-color: #e44648;
+      color: white;
+      font-size: 1em;
+      font-family: 'Roboto', sans-serif;
+      border: 0;
+      width: 75%;
+      padding-left: 20px;
+      cursor: pointer;
+    }
+
+    .line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #text {
+      color: #737373;
+      margin-top: 3em;
+      margin-bottom: 3em;
+    }
+
+    #heading {
+      color: #515151;
+      font-size: 1.3em;
+      font-weight: 900;
+      margin-bottom: 0.5em;
+    }
+
+    #second-line {
+      margin-bottom: 0.5em;
+    }
+
+    a,
+    a:active,
+    a:focus {
+      margin-top: 1.4em;
+      margin-bottom: 2.4em;
+      outline: none;
+      text-decoration: none !important;
+      color: #4c4c4c;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flexcontainer">
+    <img src="../img/gps_permission.png">
+    <div id="text">
+      <div id="heading" class="line">
+        Need Your Location
+      </div>
+      <div id="second-line" class="line">
+        Please give us access to your
+      </div>
+      <div class="line">
+        GPS Location
+      </div>
+    </div>
+    <a class="button">ALLOW</a>
+    <a href="">NO, OTHER TIME</a>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script>
+    alert("This is just a test..");
+    if ($(window).height() < 660) {
+      $("body").css("height", "auto");
+    }
+
+    $(window).resize(function() {
+      if ($(window).height() < 660) {
+        $("body").css("height", "auto");
+      } else {
+        $("body").css("height", "100%");
+      }
+    });
+  </script>
+</body>
+
+</html>
