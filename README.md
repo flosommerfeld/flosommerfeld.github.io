@@ -1,6 +1,6 @@
 # flosommerfeld.github.io
 ### My personal website. Take a look at the preview below or just [visit my website](https://flosommerfeld.github.io): ###
-
+![status - under construction](https://img.shields.io/badge/status-under%20construction-yellow.svg "status - under construction")
 ![Preview of my website](http://i.imgur.com/nyGmDsX.png "Preview of my website")
 <br>
 #### Old versions: ###
