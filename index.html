@@ -4,98 +4,96 @@
    <head>
       <link rel="stylesheet" href="css/bulma.css">
       <style>
-        .container{
-          margin-top: 50px;
-          margin-bottom: 50px;
-        }
+         #main{
+         margin-top: 50px;
+         margin-bottom: 50px;
+         }
+         .is-horizontal-center {
+         justify-content: center;
+         }
+         #profile_picture{
+         max-width: 120px;
+         margin-bottom: 25px;
+         }
       </style>
    </head>
    <body>
-      <nav class="navbar is-transparent">
-         <div class="navbar-brand">
-            <a class="navbar-item" href="https://bulma.io">
-            <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-            </a>
-            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-               <span></span>
-               <span></span>
-               <span></span>
-            </div>
-         </div>
-         <div id="navbarExampleTransparentExample" class="navbar-menu">
-            <div class="navbar-start">
-               <a class="navbar-item" href="https://bulma.io/">
-               Home
-               </a>
-               <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link" href="/documentation/overview/start/">
-                  Docs
-                  </a>
-                  <div class="navbar-dropdown is-boxed">
-                     <a class="navbar-item" href="/documentation/overview/start/">
-                     Overview
+      <section class="hero is-primary is-medium">
+         <!-- Hero head: will stick at the top -->
+         <div class="hero-head">
+            <nav class="navbar">
+               <div class="container">
+                  <!--<div class="navbar-brand">
+                     <a class="navbar-item">
+                     <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
                      </a>
-                     <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
-                     Modifiers
-                     </a>
-                     <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
-                     Columns
-                     </a>
-                     <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
-                     Layout
-                     </a>
-                     <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
-                     Form
-                     </a>
-                     <hr class="navbar-divider">
-                     <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
-                     Elements
-                     </a>
-                     <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
-                     Components
-                     </a>
+                     <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     </span>
+                     </div>-->
+                  <div id="navbarMenuHeroA" class="navbar-menu">
+                     <div class="navbar-end">
+                        <a class="navbar-item is-active">
+                        Home
+                        </a>
+                        <a class="navbar-item">
+                        Projects
+                        </a>
+                        <span class="navbar-item">
+                        <a class="button is-primary is-inverted">
+                        <span class="icon">
+                        <i class="fab fa-github"></i>
+                        </span>
+                        <span>Message Me</span>
+                        </a>
+                        </span>
+                     </div>
                   </div>
                </div>
-            </div>
-            <div class="navbar-end">
-               <div class="navbar-item">
-                  <div class="field is-grouped">
-                     <p class="control">
-                        <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
-                        <span class="icon">
-                        <i class="fab fa-twitter"></i>
-                        </span>
-                        <span>
-                        Tweet
-                        </span>
-                        </a>
-                     </p>
-                     <p class="control">
-                        <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
-                        <span class="icon">
-                        <i class="fas fa-download"></i>
-                        </span>
-                        <span>Download</span>
-                        </a>
-                     </p>
-                  </div>
-               </div>
-            </div>
+            </nav>
          </div>
-      </nav>
-      <section class="hero is-medium is-primary is-bold">
+         <!-- Hero content: will be in the middle -->
          <div class="hero-body">
-            <div class="container">
+            <div class="container has-text-centered">
+               <img id="profile_picture" src="https://avatars2.githubusercontent.com/u/21983740?s=460&v=4">
+            </div>
+            <div class="container has-text-centered">
                <h1 class="title">
-                  Primary bold title
+                  Florian Sommerfeld
                </h1>
                <h2 class="subtitle">
-                  Primary bold subtitle
+                  Software Developer from Germany
                </h2>
+               <a class="button">
+               <span class="icon">
+               <i class="fab fa-github"></i>
+               </span>
+               <span>GitHub</span>
+               </a>
+               <a class="button is-primary">
+               <span class="icon">
+               <i class="fab fa-twitter"></i>
+               </span>
+               <span>Twitter</span>
+               </a>
+               <a class="button is-success">
+               <span class="icon is-small">
+               <i class="fas fa-check"></i>
+               </span>
+               <span>Save</span>
+               </a>
+               <a class="button is-danger is-outlined">
+               <span>Delete</span>
+               <span class="icon is-small">
+               <i class="fas fa-times"></i>
+               </span>
+               </a>
             </div>
          </div>
       </section>
-      <div class="container">
+      <div id="main" class="container">
          <div class="columns">
             <div class="column">
                <div class="card">
@@ -116,58 +114,58 @@
                </div>
             </div>
             <div class="column">
-              <div class="card">
-                 <div class="card-image">
-                    <figure class="image is-4by3">
-                       <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                    </figure>
-                 </div>
-                 <div class="card-content">
-                    <div class="content">
-                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                       Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                       <a href="#">#css</a> <a href="#">#responsive</a>
-                       <br>
-                       <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                    </div>
-                 </div>
-              </div>
+               <div class="card">
+                  <div class="card-image">
+                     <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                     </figure>
+                  </div>
+                  <div class="card-content">
+                     <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                     </div>
+                  </div>
+               </div>
             </div>
             <div class="column">
-              <div class="card">
-                 <div class="card-image">
-                    <figure class="image is-4by3">
-                       <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                    </figure>
-                 </div>
-                 <div class="card-content">
-                    <div class="content">
-                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                       Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                       <a href="#">#css</a> <a href="#">#responsive</a>
-                       <br>
-                       <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                    </div>
-                 </div>
-              </div>
+               <div class="card">
+                  <div class="card-image">
+                     <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                     </figure>
+                  </div>
+                  <div class="card-content">
+                     <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                     </div>
+                  </div>
+               </div>
             </div>
             <div class="column">
-              <div class="card">
-                 <div class="card-image">
-                    <figure class="image is-4by3">
-                       <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                    </figure>
-                 </div>
-                 <div class="card-content">
-                    <div class="content">
-                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                       Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                       <a href="#">#css</a> <a href="#">#responsive</a>
-                       <br>
-                       <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                    </div>
-                 </div>
-              </div>
+               <div class="card">
+                  <div class="card-image">
+                     <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                     </figure>
+                  </div>
+                  <div class="card-content">
+                     <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        <a href="#">#css</a> <a href="#">#responsive</a>
+                        <br>
+                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                     </div>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
