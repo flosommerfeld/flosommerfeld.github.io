@@ -4,9 +4,10 @@
 
 <br/>
 
-![Preview of my website](https://i.imgur.com/nx0x3cU.png "Preview of my website")
+![Preview of my website](https://i.imgur.com/P8cETHb.png "Preview of my website")
 <br>
 #### Old versions: ###
+![Preview of my website - old version](https://i.imgur.com/nx0x3cU.png "Preview of my website - old version")
 ![Preview of my website - old version](http://i.imgur.com/nyGmDsX.png "Preview of my website - old version")
 ![Preview of my website - old version](http://i.imgur.com/xa4RAho.png "Preview of my website - old version")
 
