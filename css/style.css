@@ -1,0 +1,15 @@
+#projects{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.is-horizontal-center {
+  justify-content: center;
+}
+#profile_picture{
+  max-width: 160px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+}
+#stackOverflow{
+  margin-top: 10px;
+}
