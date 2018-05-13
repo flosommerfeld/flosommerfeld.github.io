@@ -2,6 +2,12 @@ body{
   font-family: 'Ubuntu', Helvetica, Arial;
 }
 
+a:active:not(.button), a:focus:not(.button){
+  outline: 0;
+  border: none;
+  -moz-outline-style: none
+}
+
 #projects{
   margin-top: 50px;
   margin-bottom: 50px;
