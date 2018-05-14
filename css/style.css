@@ -5,7 +5,7 @@ body{
 a:active:not(.button), a:focus:not(.button){
   outline: 0;
   border: none;
-  -moz-outline-style: none
+  -moz-outline-style: none;
 }
 
 #projects{
