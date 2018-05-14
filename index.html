@@ -38,11 +38,11 @@
                         Projects
                         </a>
                         <span class="navbar-item">
-                        <a class="button is-primary is-inverted closeMenu">
+                        <a id="btnOpenModal" class="button is-primary is-inverted closeMenu">
                         <span class="icon">
                         <i class="far fa-envelope"></i>
                         </span>
-                        <span onclick="document.getElementById('modal').classList.add('is-active');">Message Me</span>
+                        <span>Message Me</span>
                         </a>
                         </span>
                      </div>
@@ -180,7 +180,7 @@
          </div>
       </footer>
       <div id="modal" class="modal">
-         <div onclick="document.getElementById('modal').classList.remove('is-active');" class="modal-background"></div>
+         <div id="modalBackground" class="modal-background"></div>
          <div class="modal-content">
             <div class="box">
                <article class="media">
@@ -202,8 +202,9 @@
                </article>
             </div>
          </div>
-         <button onclick="document.getElementById('modal').classList.remove('is-active');" class="modal-close is-large" aria-label="close"></button>
+         <button id="btnCloseModal" class="modal-close is-large" aria-label="close"></button>
       </div>
+      <script type="text/javascript" src="js/main.js"></script>
       <script type="text/javascript" src="js/mobile.js"></script>
 
    </body>
