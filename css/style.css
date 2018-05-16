@@ -1,5 +1,7 @@
 body{
   font-family: 'Ubuntu', Helvetica, Arial;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a:active:not(.button), a:focus:not(.button){
