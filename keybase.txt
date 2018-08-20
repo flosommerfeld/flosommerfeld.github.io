@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/flosommerfeld
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://flosommerfeld.github.io
+  * I am flosommerfeld (https://keybase.io/flosommerfeld) on keybase.
+  * I have a public key ASA3g33zu1TBtYTibX3RNP2i32hSBytPxIFoyHdYw-Tg6Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012037837df3bb54c1b584e26d7dd134fda2df6852072b4fc48168c87758c3e4e0e90a",
+      "host": "keybase.io",
+      "kid": "012037837df3bb54c1b584e26d7dd134fda2df6852072b4fc48168c87758c3e4e0e90a",
+      "uid": "6db655c5195782f0c0e711d006a81c19",
+      "username": "flosommerfeld"
+    },
+    "merkle_root": {
+      "ctime": 1534780562,
+      "hash": "c462c6548fa0421710dfa749fb2bcec3c4869b9401bc5f38dad1c3790a338841082f43c2bc38b7ee9b02869367c9ab45f86d472fa39bcdd907eb1e6570ee6074",
+      "hash_meta": "a3e88af7f57a6643c150d29b375dc22d5e4bb516452dc2f39e84fa9d072eff2c",
+      "seqno": 3485345
+    },
+    "service": {
+      "entropy": "R1/lrluz1fVVQOMA/uywEoB+",
+      "hostname": "flosommerfeld.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.6.0"
+  },
+  "ctime": 1534780572,
+  "expire_in": 504576000,
+  "prev": "f992a2b9bcebb597823fc0b911b5db4a12ef833ef5680fa80f2292f043eaf5e5",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgN4N987tUwbWE4m190TT9ot9oUgcrT8SBaMh3WMPk4OkKp3BheWxvYWTESpcCCcQg+ZKiubzrtZeCP8C5EbXbShLvgz71aA+oDyKS8EPq9eXEIIuD/SOulYjcMspWwvAU4eP74gS/r8mngSwrFt2sLiDNAgHCo3NpZ8RAqHM9LfplujHznjPq8GrrmqDq99kMmwz+QRRw74l+fzRtPGLScHaO2WvFXrxooG+zWzbbj3cvFBsAcQ0IsVS/CqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEID/Ol9I/ANydQd4omh1S4DQWeCD+qW7Lo0AKtkDKuMd+o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/flosommerfeld
+
+==================================================================
